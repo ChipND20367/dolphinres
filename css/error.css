@@ -1,0 +1,139 @@
+/*=========================================
+        DOLPHIN RES — 404 PAGE
+==========================================*/
+
+.error-page{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    padding:140px 8% 80px;
+
+    background:linear-gradient(135deg, var(--primary), var(--primary-light));
+
+}
+
+.error-content{
+
+    max-width:520px;
+
+    color:white;
+
+}
+
+.error-code{
+
+    font-size:110px;
+
+    font-weight:800;
+
+    color:var(--accent);
+
+    line-height:1;
+
+    margin-bottom:10px;
+
+    opacity:0;
+
+    animation:fadeInUp .8s var(--ease) .1s forwards;
+
+}
+
+.error-content h1{
+
+    font-size:32px;
+
+    margin-bottom:16px;
+
+    opacity:0;
+
+    animation:fadeInUp .8s var(--ease) .25s forwards;
+
+}
+
+.error-content p{
+
+    color:#CBD5E1;
+
+    line-height:1.8;
+
+    margin-bottom:32px;
+
+    opacity:0;
+
+    animation:fadeInUp .8s var(--ease) .4s forwards;
+
+}
+
+.error-buttons{
+
+    display:flex;
+
+    gap:16px;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    opacity:0;
+
+    animation:fadeInUp .8s var(--ease) .55s forwards;
+
+}
+
+.btn-outline-dark{
+
+    display:inline-block;
+
+    padding:12px 28px;
+
+    border:2px solid rgba(255,255,255,.4);
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:8px;
+
+    transition:background .3s var(--ease), border-color .3s var(--ease), transform .3s var(--ease);
+
+}
+
+.btn-outline-dark:hover{
+
+    background:rgba(255,255,255,.1);
+
+    border-color:white;
+
+    transform:translateY(-3px);
+
+}
+
+@media(max-width:600px){
+
+    .error-code{
+
+        font-size:80px;
+
+    }
+
+    .error-content h1{
+
+        font-size:26px;
+
+    }
+
+    .error-buttons{
+
+        flex-direction:column;
+
+    }
+
+}

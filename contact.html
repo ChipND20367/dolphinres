@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dolphin Res | Contact Us</title>
+
+<meta name="description" content="Get in touch with Dolphin Res — call, WhatsApp, email or visit us at 41 Dolphin Avenue, Reservoir Hills, Durban.">
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='50' fill='%231E293B'/%3E%3Ctext x='50' y='68' font-family='Arial,sans-serif' font-size='58' font-weight='700' fill='%23DC2626' text-anchor='middle'%3ED%3C/text%3E%3C/svg%3E">
+
+<meta property="og:title" content="Dolphin Res | Contact Us">
+<meta property="og:description" content="Get in touch with Dolphin Res — call, WhatsApp, email or visit us at 41 Dolphin Avenue, Reservoir Hills, Durban.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="images/hero.jpeg">
+<meta property="og:url" content="contact.html">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/contact.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+<!-- Loading Screen -->
+<div class="loading-screen">
+<div class="loading-logo">Dolphin <span>Res</span></div>
+<div class="loading-spinner"></div>
+</div>
+
+<!-- Scroll Progress Bar -->
+<div class="scroll-progress"></div>
+
+<!-- Skip Link (Accessibility) -->
+<a href="#main-content" class="skip-link">Skip to main content</a>
+
+<!-- ================= NAVBAR ================= -->
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+<h2>Dolphin <span>Res</span></h2>
+</div>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="residence.html">Our Residence</a></li>
+<li><a class="active" href="contact.html">Contact</a></li>
+
+</ul>
+
+<a href="contact.html" class="btn">Apply Now</a>
+
+<div class="menu-btn">
+☰
+</div>
+
+</nav>
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section id="main-content" class="contact-hero">
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+
+<h1>Get In <span>Touch</span></h1>
+
+<p>
+
+Questions about rooms, pricing or NSFAS accreditation? We're here
+to help — reach out any way that suits you.
+
+</p>
+
+<a href="#contact-form" class="btn">Send a Message</a>
+
+</div>
+
+</section>
+
+<!-- ================= CONTACT INFO ================= -->
+
+<section class="contact-info">
+
+<div class="info-card">
+<div class="icon">📍</div>
+<h3>Visit Us</h3>
+<p>41 Dolphin Avenue<br>Reservoir Hills, Durban</p>
+</div>
+
+<div class="info-card">
+<div class="icon">📞</div>
+<h3>Call Us</h3>
+<p><a href="tel:+27823394939">+27 82 339 4939</a></p>
+</div>
+
+<div class="info-card">
+<div class="icon">✉️</div>
+<h3>Email Us</h3>
+<p><a href="mailto:nielramlal@telkomsa.net">nielramlal@telkomsa.net</a></p>
+</div>
+
+<div class="info-card">
+<div class="icon">💬</div>
+<h3>WhatsApp</h3>
+<p><a href="https://wa.me/27823394939" target="_blank" rel="noopener">+27 82 339 4939</a></p>
+</div>
+
+</section>
+
+<!-- ================= FORM + MAP ================= -->
+
+<section id="contact-form" class="contact-main">
+
+<div class="contact-form-wrap">
+
+<h2>Send Us a Message</h2>
+<p>Fill in the form and we'll get back to you as soon as possible.</p>
+
+<!-- Success/error banners, shown by JS based on the ?sent= query param
+     FormSubmit redirects back with after a submission. Hidden by default. -->
+<div id="form-success" class="form-banner form-banner-success" hidden>
+✓ Thanks — your message was sent. We'll get back to you soon.
+</div>
+
+<div id="form-error" class="form-banner form-banner-error" hidden>
+Something went wrong sending that. Please try again, or message us
+directly on <a href="https://wa.me/27823394939" target="_blank" rel="noopener">WhatsApp</a>.
+</div>
+
+<form id="contact-form-el" action="https://formsubmit.co/nielramlal@telkomsa.net" method="POST">
+
+<!-- FormSubmit configuration fields (not shown to the visitor) -->
+<input type="hidden" name="_subject" value="New enquiry from Dolphin Res website">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_captcha" value="true">
+<input type="hidden" name="_next" value="https://www.dolphinres.co.za/contact.html?sent=true">
+
+<!-- Honeypot field: invisible to real visitors, but bots that fill in
+     every field blindly will fill this one too. FormSubmit recognizes
+     a field named "_honey" and silently discards the submission
+     server-side — real spam protection, not just a client-side check. -->
+<div class="form-row honeypot-field" aria-hidden="true">
+<label for="website">Website</label>
+<input type="text" id="website" name="_honey" tabindex="-1" autocomplete="off">
+</div>
+
+<div class="form-row">
+<label for="name">Full Name</label>
+<input type="text" id="name" name="name" placeholder="Your full name" required>
+</div>
+
+<div class="form-row">
+<label for="email">Email Address</label>
+<input type="email" id="email" name="email" placeholder="you@example.com" required>
+</div>
+
+<div class="form-row">
+<label for="phone">Phone Number</label>
+<input type="tel" id="phone" name="phone" placeholder="e.g. 071 234 5678">
+</div>
+
+<div class="form-row">
+<label for="message">Message</label>
+<textarea id="message" name="message" rows="5" placeholder="Tell us what you're looking for..." required></textarea>
+</div>
+
+<button type="submit" class="btn" id="contact-submit-btn">Send Message</button>
+
+<p class="form-note">We'll reply by email or WhatsApp, whichever you prefer.</p>
+
+</form>
+
+</div>
+
+<div class="contact-map-wrap">
+
+<iframe
+class="contact-map"
+src="https://maps.google.com/maps?q=41%20Dolphin%20Avenue%2C%20Reservoir%20Hills%2C%20Durban&t=&z=16&ie=UTF8&iwloc=&output=embed"
+allowfullscreen=""
+loading="lazy"
+referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+
+</div>
+
+</section>
+
+<!-- ================================================
+     FAQ — 8 most common questions, accordion style.
+     Answers are placeholders — replace [Add answer...] with real info.
+================================================= -->
+<section class="faq">
+
+<div class="section-title">
+<h2>Frequently Asked Questions</h2>
+<p>Quick answers to the questions we get asked most.</p>
+</div>
+
+<div class="faq-list">
+
+<div class="faq-item">
+<button class="faq-question" aria-expanded="false">
+<span>Do you accept NSFAS students?</span>
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<p> Yes! Dolphin Res is NSFAS Accredited (Grade A), making it suitable for students funded by NSFAS or other bursary providers.</p>
+</div>
+</div>
+
+<div class="faq-item">
+<button class="faq-question" aria-expanded="false">
+<span>Is there a deposit required?</span>
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<p> No, no deposit is required to move in.</p>
+</div>
+</div>
+
+<div class="faq-item">
+<button class="faq-question" aria-expanded="false">
+<span>What will i find in the rooms?</span>
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<p> Each room is fully furnished with a bed, desk, chair, and storage space.</p>
+</div>
+</div>
+
+<div class="faq-item">
+<button class="faq-question" aria-expanded="false">
+<span>What's the lease term?</span>
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<p>We offer a 10-month lease, designed to align with the academic year. </p>
+</div>
+</div>
+
+<div class="faq-item">
+<button class="faq-question" aria-expanded="false">
+<span>How far is Dolphin Res from UKZN?</span>
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<p> Dolphin Res is approximately 4.4 km from the University of KwaZulu-Natal (UKZN).</p>
+</div>
+</div>
+
+<div class="faq-item">
+<button class="faq-question" aria-expanded="false">
+<span>What's the visitor policy?</span>
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<p> Yes, we have a visitor policy in place to ensure the safety and well-being of all residents.</p>
+</div>
+</div>
+
+<div class="faq-item">
+<button class="faq-question" aria-expanded="false">
+<span>Is the residence secure?</span>
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<p> Absolutely. Dolphin Res provides 24-hour security and cctv cameras to ensure the safety and peace of mind of all residents.</p>
+</div>
+</div>
+
+<div class="faq-item">
+<button class="faq-question" aria-expanded="false">
+<span>How does transport to UKZN Westville work?</span>
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<p> We offer a shuttle service that runs regularly between Dolphin Res and the UKZN Westville campus.</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<p>
+
+© 2026 Dolphin Res. All Rights Reserved.
+
+</p>
+
+</footer>
+
+<!-- back to top button -->
+<button class="back-to-top" aria-label="Back to top">↑</button>
+
+<!-- floating whatsapp button -->
+<a href="https://wa.me/27823394939" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat with us on WhatsApp">
+<svg viewBox="0 0 32 32" width="30" height="30" fill="#FFFFFF">
+<path d="M16.004 3.2C8.94 3.2 3.2 8.94 3.2 16c0 2.36.63 4.63 1.83 6.63L3.2 28.8l6.33-1.79A12.75 12.75 0 0 0 16.004 28.8c7.06 0 12.8-5.74 12.8-12.8s-5.74-12.8-12.8-12.8zm7.5 18.1c-.32.9-1.86 1.72-2.57 1.83-.66.1-1.5.14-2.42-.15-.56-.18-1.27-.42-2.2-.82-3.87-1.67-6.4-5.58-6.59-5.84-.19-.26-1.58-2.1-1.58-4.01 0-1.9 1-2.84 1.36-3.23.35-.38.77-.48 1.02-.48l.73.01c.24.01.55-.09.86.66.32.78 1.1 2.7 1.2 2.9.1.19.16.42.03.68-.13.26-.2.42-.39.65-.19.23-.4.51-.57.69-.19.19-.4.4-.17.79.23.4.99 1.66 2.14 2.69 1.47 1.32 2.72 1.73 3.11 1.93.4.19.63.16.86-.1.24-.26.98-1.15 1.24-1.55.26-.4.51-.33.86-.2.35.13 2.2 1.05 2.58 1.24.38.19.63.29.72.45.1.16.1.94-.22 1.86z"/>
+</svg>
+</a>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

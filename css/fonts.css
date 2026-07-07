@@ -1,0 +1,95 @@
+/*=========================================
+   DOLPHIN RES — SELF-HOSTED POPPINS FONT
+==========================================
+
+HOW TO FINISH THIS (one-time setup):
+
+1. Go to https://gwfh.mranftl.com/fonts (Google Webfonts Helper — free,
+   no signup) and search for "Poppins".
+
+2. Select these weights: 300, 400, 500, 600, 700, 800
+   (these are the exact weights this site actually uses).
+
+3. Choose "Modern Browsers" charset (gives you .woff2 files — smaller
+   and supported by every browser released in the last several years).
+
+4. Download the zip. It gives you files named like:
+   poppins-v23-latin-300.woff2
+   poppins-v23-latin-regular.woff2   <- this is weight 400
+   poppins-v23-latin-500.woff2
+   ...etc
+
+5. Rename them to match what's referenced below (or just edit the paths
+   below to match whatever names you downloaded — either works):
+   poppins-300.woff2
+   poppins-400.woff2
+   poppins-500.woff2
+   poppins-600.woff2
+   poppins-700.woff2
+   poppins-800.woff2
+
+6. Create a "fonts" folder in your project root (same level as css/, js/)
+   and put all 6 .woff2 files in there.
+
+7. In EVERY html file, replace these two lines in <head>:
+
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+   with this one line:
+
+     <link rel="stylesheet" href="css/fonts.css">
+
+That's it — the site will load the font from your own server instead of
+Google's, which is one less third-party request and a small privacy win
+(Google no longer sees every visitor who loads your site).
+
+========================================== */
+
+@font-face{
+    font-family:'Poppins';
+    font-style:normal;
+    font-weight:300;
+    font-display:swap;
+    src:url('../fonts/poppins-300.woff2') format('woff2');
+}
+
+@font-face{
+    font-family:'Poppins';
+    font-style:normal;
+    font-weight:400;
+    font-display:swap;
+    src:url('../fonts/poppins-400.woff2') format('woff2');
+}
+
+@font-face{
+    font-family:'Poppins';
+    font-style:normal;
+    font-weight:500;
+    font-display:swap;
+    src:url('../fonts/poppins-500.woff2') format('woff2');
+}
+
+@font-face{
+    font-family:'Poppins';
+    font-style:normal;
+    font-weight:600;
+    font-display:swap;
+    src:url('../fonts/poppins-600.woff2') format('woff2');
+}
+
+@font-face{
+    font-family:'Poppins';
+    font-style:normal;
+    font-weight:700;
+    font-display:swap;
+    src:url('../fonts/poppins-700.woff2') format('woff2');
+}
+
+@font-face{
+    font-family:'Poppins';
+    font-style:normal;
+    font-weight:800;
+    font-display:swap;
+    src:url('../fonts/poppins-800.woff2') format('woff2');
+}

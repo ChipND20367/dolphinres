@@ -1,0 +1,211 @@
+/*=========================================
+        DOLPHIN RES — ABOUT PAGE
+==========================================*/
+
+/*================ ABOUT HERO ================*/
+
+.about-hero{
+
+    position:relative;
+
+    height:65vh;
+    min-height:440px;
+
+    background:url("../images/hero.jpeg") center 35%/cover;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    overflow:hidden;
+
+}
+
+.about-hero .overlay{
+
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+
+    background:rgba(15,23,42,.65);
+
+    z-index:1;
+
+}
+
+.about-hero .hero-content{
+
+    position:relative;
+    z-index:2;
+
+    max-width:680px;
+
+    padding:0 24px;
+
+    color:#F1F5F9;
+
+}
+
+.about-hero h1{
+
+    font-size:52px;
+
+    margin-bottom:18px;
+
+    opacity:0;
+
+    animation:fadeInUp .8s var(--ease) .15s forwards;
+
+}
+
+.about-hero h1 span{
+
+    color:var(--accent);
+
+}
+
+.about-hero p{
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    margin-bottom:30px;
+
+    color:#E2E8F0;
+
+    opacity:0;
+
+    animation:fadeInUp .8s var(--ease) .35s forwards;
+
+}
+
+.about-hero .btn{
+
+    opacity:0;
+
+    animation:fadeInUp .8s var(--ease) .55s forwards;
+
+}
+
+.about-hero::after{
+
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:-1px;
+    width:100%;
+    height:70px;
+    z-index:2;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M0,50 C300,120 900,-10 1200,50 L1200,120 L0,120 Z' fill='%23F8FAFC'/%3E%3C/svg%3E");
+    background-size:100% 100%;
+    background-repeat:no-repeat;
+
+}
+
+/*================ REVERSED STORY LAYOUT ================*/
+/* second .about block on the page alternates image/text sides */
+
+.about.reverse .about-image{
+
+    order:-1;
+
+}
+
+.about.reverse{
+
+    background:var(--surface);
+
+}
+
+/*================ VALUES GRID ================*/
+/* values-grid reuses .amenities-container / .amenity-card styling as-is */
+
+/*================ CTA ================*/
+
+.about-cta{
+
+    position:relative;
+
+    text-align:center;
+
+    padding:110px 8%;
+
+    background:var(--primary-light);
+
+    color:white;
+
+    overflow:hidden;
+
+}
+
+.about-cta::before{
+
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+        radial-gradient(circle at 15% 20%, rgba(220,38,38,.18), transparent 45%),
+        radial-gradient(circle at 85% 80%, rgba(220,38,38,.14), transparent 45%);
+    pointer-events:none;
+
+}
+
+.about-cta h2{
+
+    position:relative;
+
+    font-size:38px;
+
+    margin-bottom:16px;
+
+}
+
+.about-cta p{
+
+    position:relative;
+
+    max-width:520px;
+
+    margin:0 auto 34px;
+
+    line-height:1.8;
+
+    color:#E2E8F0;
+
+}
+
+.about-cta .btn{
+
+    position:relative;
+
+}
+
+/*================ RESPONSIVE ================*/
+
+@media(max-width:900px){
+
+    .about-hero h1{
+
+        font-size:36px;
+
+    }
+
+    .about.reverse .about-image{
+
+        order:0;
+
+    }
+
+    .about-cta h2{
+
+        font-size:30px;
+
+    }
+
+}
